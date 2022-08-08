@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Film {
-    static List<String> filmler = new ArrayList<>(Arrays.asList("JOKER", "INCEPTION", "PIYANIST", "GREENMILE", "LEON", "GODFATHER", "JURASSICPARK", "TITANIC"));
+    static List<String> filmler = new ArrayList<>(Arrays.asList("MUCIZE", "TOSUNPASA", "AYLA", "SEVGININGUCU", "KIBARFEYZO", "VIZONTELE", "BABAMVEOGLUM", "PARDON"));
     static StringBuilder film=new StringBuilder("");
 
     public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class Film {
                 if(filmHarf.equals(film+"")){
                     System.out.println("****tebrikler kazandınız****");
                     System.out.println(film);
-                    System.out.println(count+". hakkınızda soğru tahmin ettiniz");
+                    System.out.println(count+". hakkınızda doğru tahmin ettiniz");
                     count=film.length()*2;}else {
                         System.out.println(film);
                     System.out.println("kalan hakkınız :"+(film.length()*2-count));}
