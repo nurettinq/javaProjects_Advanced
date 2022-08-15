@@ -13,14 +13,14 @@ public class Passenger {
     private String ticketType;
 
     public Passenger(String nameSurname, int age, String city, String ticketType) {
-        this.nameSurname = nameSurname;
+        //this.nameSurname = nameSurname;
+        setNameSurname(nameSurname);
         this.age = age;
         this.city = city;
         this.ticketType = ticketType;
         setFlightNo();
         setGateHno(city);
     }
-
     public int getAge() {
         return age;
     }
@@ -34,12 +34,15 @@ public class Passenger {
         Random r=new Random();
         this.gateHno = ""+city+r.nextInt(10);
     }
+    public void setNameSurname(String nameSurname) {
+        this.nameSurname = nameSurname.toUpperCase();
+    }
 
     public String getTicketType() {
         return ticketType;
     }
 
-    @Override
+     @Override
     public String toString() {
         return "Passenger:" +
                 "\n Name Surname:" + nameSurname +
