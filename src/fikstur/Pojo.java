@@ -15,10 +15,11 @@ public class Pojo {
         map1.put("fo", "bers");
         System.out.println(map.values().equals(map1.values()));
         List<String> lisre = new ArrayList<String>();
+        lisre.add("bar");
         lisre.add("sdfsd");
         lisre.add("nurullah");
         lisre.add("nurettin");
-        lisre.add("bar");
+
         lisre.add("nurullah");
         String a="nurullah";
         System.out.println(lisre.contains(a));
@@ -32,9 +33,15 @@ public class Pojo {
         set.add("salif");
         set.add("ntin");
         set.add("nurettin");
-      LinkedHashSet set2 = new LinkedHashSet(lisre);
-      LinkedHashSet set3 = new LinkedHashSet(set);
-      LinkedList list = new LinkedList(lisre);
-        System.out.println(list);
+        System.out.println(lisre);
+        Set <String> dene=new HashSet<>(lisre);
+        System.out.println(dene);
+
+        List<String> lis=new ArrayList<>(dene);
+        System.out.println(lis);
+    // LinkedHashSet set2 = new LinkedHashSet(lisre);
+    // LinkedHashSet set3 = new LinkedHashSet(set);
+    // LinkedList list = new LinkedList(lisre);
+      //  System.out.println(list);
 
     }}
