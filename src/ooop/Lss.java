@@ -1,4 +1,4 @@
-package deneme;
+package ooop;
 
 public class Lss {
     String name;

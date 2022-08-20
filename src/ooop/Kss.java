@@ -1,8 +1,7 @@
-package deneme;
+package ooop;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class Kss {
     public static void main(String[] args) {
